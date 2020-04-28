@@ -20,9 +20,12 @@ Make it possible to configure the default upload folder for a certain TCA column
         # You can set a folder for the whole table of for a specific field of that table
         tx_news_domain_model_news.fal_related_files = news_downloads
         tx_news_domain_model_news.fal_media = news_media
+
+        # You can set a fallback for all tables
+        defaultForAllTables = 1:myDefaultUploadFolderForThisPartOfTheTree
     }
 ```
 
 **Requirements:**
 
-    TYPO3 7 LTS or TYPO3 8.*
+    TYPO3 8.7.* LTS or TYPO3 10.4.*
